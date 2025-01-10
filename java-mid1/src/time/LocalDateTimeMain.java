@@ -5,9 +5,10 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 
 public class LocalDateTimeMain {
+
     public static void main(String[] args) {
         LocalDateTime nowDt = LocalDateTime.now();
-        LocalDateTime ofDt = LocalDateTime.of(2028, 1, 9, 14, 49, 30);
+        LocalDateTime ofDt = LocalDateTime.of(2016, 8, 16, 8, 10, 1);
         System.out.println("현재 날짜시간 = " + nowDt);
         System.out.println("지정 날짜시간 = " + ofDt);
 
@@ -22,15 +23,14 @@ public class LocalDateTimeMain {
         System.out.println("localDateTime = " + localDateTime);
 
         //계산(불변)
-        LocalDateTime plusDays = ofDt.plusDays(1000);
-        System.out.println("지정 날짜시간 + 1000일 = " + plusDays);
-        LocalDateTime plusYears = ofDt.plusYears(10);
-        System.out.println("지정 날짜시간 + 10년 = " + plusYears);
+        LocalDateTime ofDtPlus = ofDt.plusDays(1000);
+        System.out.println("지정 날짜시간+1000d = "+ ofDtPlus);
+        LocalDateTime ofDtPlus1Year = ofDt.plusYears(1);
+        System.out.println("지정 날짜시간+1년 = " + ofDtPlus1Year);
 
         //비교
-        System.out.println("현재 날짜시간이 지정 날짜시간 보다 과거인가? = " + nowDt.isBefore(ofDt));
-        System.out.println("현재 날짜시간이 지정 날짜시간 보다 미래인가? = " + nowDt.isAfter(ofDt));
-        System.out.println("현재 날짜시간이 지정 날짜시간이 동일한가? = " + nowDt.isEqual(ofDt));
+        System.out.println("현재 날짜시간이 지정 날짜시간보다 이전인가? " + nowDt.isBefore(ofDt));
+        System.out.println("현재 날짜시간이 지정 날짜시간보다 이후인가? " + nowDt.isAfter(ofDt));
+        System.out.println("현재 날짜시간과 지정 날짜시간이 같은가? " + nowDt.isEqual(ofDt));
     }
 }
-
