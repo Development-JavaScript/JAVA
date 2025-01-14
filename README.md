@@ -6,10 +6,8 @@
 
 *JIRA + GitHub 연결완료
 
-*ch01 : JAVA 기초
+*src : JAVA 기본
 
-*ch02 : 변수와 타입
+*java-basic : JAVA 초급
 
-*ch03 : 연산자
-
-*ch04 : 조건문/반복문
+*java-mid1 : JAVA 중급1
