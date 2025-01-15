@@ -11,3 +11,5 @@
 *java-basic : JAVA 초급
 
 *java-mid1 : JAVA 중급1
+
+*java-mid2 : JAVA 중급2
